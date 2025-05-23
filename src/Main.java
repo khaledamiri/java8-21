@@ -20,5 +20,10 @@ public class Main {
         int sum = liste.stream().filter(integer -> integer % 2 == 0).mapToInt(value -> value).sum();
         System.out.println(sum);
 
+        //Record
+        PatternMatchingDemo.checkPoint(new Point(3, 3));  // Diagonale
+        PatternMatchingDemo.checkPoint(new Point(2, 5));  // Pas sur la diagonale
+        PatternMatchingDemo.checkPoint("Hello");           // Objet non reconnu
+
     }
 }
